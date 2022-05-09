@@ -8,21 +8,12 @@ import { userIcon } from './user'
 
 export const enum EIcons { comment, complein, eye, hide, save, share, user }
 
-export const icon = (name: EIcons) => {
-  switch (name) {
-    case EIcons.comment:
-      return commentIcon()
-    case EIcons.complein:
-      return compleinIcon()
-    case EIcons.eye:
-      return eyeIcon()  
-    case EIcons.hide:
-      return hideIcon()  
-    case EIcons.save:
-      return saveIcon()   
-    case EIcons.share:
-      return shareIcon()  
-    case EIcons.user:
-      return userIcon()  
-  }
+export const icons = {
+  [EIcons.comment]: commentIcon,
+  [EIcons.complein]: compleinIcon,
+  [EIcons.eye]: eyeIcon,
+  [EIcons.hide]: hideIcon,
+  [EIcons.save]: saveIcon,
+  [EIcons.share]: shareIcon,
+  [EIcons.user]: userIcon,
 }

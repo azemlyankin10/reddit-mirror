@@ -9,6 +9,7 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         // 'plugin:react/jsx-runtime'
+        'plugin:react-hooks/recommended'
     ],
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
@@ -24,7 +25,9 @@ module.exports = {
     ],
     'rules': {
         'quotes': ['warn', 'single'],
-        'semi': ['error', 'never']
+        'semi': ['error', 'never'],
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn'
     },
     'settings': {
         'react': {
